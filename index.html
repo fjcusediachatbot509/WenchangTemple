@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Links</title>
+    <title>文昌祠</title>
 
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <link rel="stylesheet" href="./index.css">
@@ -27,6 +27,9 @@
 
     </div>
 
+    <div id="text_plaque">
+        你保護了<strong> A級文物 </strong> !
+    </div>
 
 
     <a-scene id="scene"  cursor="rayOrigin: mouse">
@@ -44,22 +47,29 @@
             <img id="sick" crossOrigin="anonymous" src="./images/sick.jpg">
             <img id="theWall" crossOrigin="anonymous" src="./images/theWall.jpg">
             <img id="lantern" crossOrigin="anonymous" src="./images/lantern.jpg">
+            <img id="plague" crossOrigin="anonymous" src="./images/plaque.jpg">
             <!-- <a-asset-item id="messageText" src="message.html"></a-asset-item> -->
         </a-assets>
 
         
         <!-- <a-sky src="#skyTexture" radius="200" color="#456789" ></a-sky> -->
         <!-- <a-sky src="#skyTexture" radius="100" color="#ffbb87" ></a-sky> -->
-        <a-sky src="#skyTexture" radius="100" ></a-sky>
+        <a-sky id="sky" src="#skyTexture" radius="100" ></a-sky>
             
 
 
-    
+        
         
         <a-image src="#door" width="3" height="2"  position="7 2 -3" rotation="0 -45 0" clickhandler="txt:door"></a-image>
         <a-image src="#sick" width="2" height="3"  position="-5.5 2 -3" rotation="0 10 0" clickhandler="txt:sick"></a-image>
         <a-image src="#money" width="2" height="3"  position="-3 3 -3" rotation="0 0 0" clickhandler="txt:money"></a-image>
         <a-image src="#worshippers" width="2" height="3"  position="-10 5 3" rotation="0 90 0" clickhandler="txt:worshippers"></a-image>
+       
+        <a-image src="#plague" width="3" height="2"  position="-10 8 0" rotation="0 90 0" dangerhandler="txt:plague"></a-image>
+       
+       
+       
+       
         <a-image src="#lantern" width="2" height="3"  position="10 2 3" rotation="0 35 0" scenechange="txt:door.html"></a-image>
 
 
@@ -72,33 +82,6 @@
 
     <script>
 
-        window.addEventListener("load", (event) => {
-            //// 先用灰色布幕蓋著
-            let background = document.getElementById('background')
-            console.log("page is fully loaded");
-            
-            let sec = 0
-            let sec_end = 20
-            let timerId;
-            let opacity = 1
-            //// 逐漸降低透明度直到一段時間後 (認為載入時間大約是3.5秒以上)
-            timerId = setInterval(function(){   
-                if(sec >= sec_end) {
-                clearInterval(timerId);
-                background.style.display = 'none'
-                background.style.opacity = '1'
-                }
-                if(sec >= sec_end - 10) {
-                opacity -= 0.1
-                background.style.opacity = opacity+""
-                }
-                console.log(sec, opacity)
-                sec++;
-            }, 100);
-
-
-
-        });
 
 
     </script>
