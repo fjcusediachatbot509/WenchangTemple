@@ -40,3 +40,22 @@ img{
     height: 100%;
     display: none;
 }
+
+#text_plaque {
+    pointer-events: none;
+
+    display: none;
+    /* display: block; */
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+    left: 5svw;
+    width: 90svw;
+    height: 30svh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-size: 30px;
+    color: aliceblue;
+}
