@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <meta name="description" content="Links • A-Frame">
+    <!-- <script src="../../../dist/aframe-master.js"></script> -->
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+    <!-- <script src="js/components/aframe-tooltip-component.js"></script> -->
+    <script src="js/components/camera-position.js"></script>
+    <script src="js/components/link-controls.js"></script>
+    <!-- <script src="https://unpkg.com/aframe-environment-component@1.3.2/dist/aframe-environment-component.min.js"></script> -->
+    <!-- <script src="../../js/info-message.js"></script> -->
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+    <body>
+        <div id="background"></div>
+
+        <!-- <a-scene
+            raycaster="far: 100; objects: [link];"
+            cursor="rayOrigin: mouse"
+            camera-position
+            environment
+            info-message="htmlSrc: #messageText">
+            <a-assets> -->
+        <a-scene
+            raycaster="far: 100; objects: [link];"
+            cursor="rayOrigin: mouse"
+            camera-position>
+            <a-assets>
+                <a-asset-item id="messageText" src="message.html"></a-asset-item>
+                <img id="skyTexture" src="./WenchangTemple.jpg">
+                <img id="skyTextureOutside" src="./outside.jpg">
+                <img id="thumbJapan" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/japan.png">
+                <img id="thumbEgypt" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/egypt.png">
+                <img id="thumbForest" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/forest.png">
+                <a-asset-item id="messageText" src="message.html"></a-asset-item>
+            </a-assets>
+
+            
+            <!-- <a-sky src="#skyTexture" radius="200" color="#456789" ></a-sky> -->
+            <a-sky src="#skyTextureOutside" radius="100" color="#ffbb87" ></a-sky>
+
+            <a-link href="index.html" position="-3.5 1.5 -1.0" image="#thumbJapan"></a-link>
+            <!-- <a-link id="plaque" href="egypt.html" position="-4 2 3" rotation="0 -90 0" scale="0.5 0.5 0.5" image="#thumbEgypt"></a-link> -->
+            <!-- <a-link href="forest.html" position="8 2 3" rotation="0 -90 0" image="#thumbForest"></a-link> -->
+            <a-entity id="leftHand" link-controls="hand: left"></a-entity>
+            <a-entity id="rightHand" link-controls="hand: right"></a-entity>
+        </a-scene>
+        
+    </body>
+</html>
