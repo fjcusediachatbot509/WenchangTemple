@@ -100,7 +100,7 @@ window.addEventListener("load", (event) => {
     let background = document.getElementById('background')
     console.log("page is fully loaded");
     
-    _plaque.setAttribute('visible', false)
+    // _plaque.setAttribute('visible', false)
 
     let sec = 0
     let sec_end = 20
