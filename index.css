@@ -52,6 +52,8 @@ img{
 }
 
 #text_desc{
+    white-space: pre-line;
+
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -62,6 +64,8 @@ img{
 }
 
 #text_plaque {
+    white-space: pre;
+
     pointer-events: none;
 
     display: none;
