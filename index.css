@@ -71,7 +71,7 @@ img{
     top: 40%;
     left: 5svw;
     width: 90svw;
-    height: 5svh;
+    height: 15svh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -82,7 +82,7 @@ img{
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 979px) {
+@media screen and (max-width: 768px) {
     /* // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。 */
     
     #text_desc{
