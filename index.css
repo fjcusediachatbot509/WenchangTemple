@@ -41,6 +41,26 @@ img{
     display: none;
 }
 
+#textContrainer{
+    position: absolute;
+    z-index: 10;
+    width: 80svw;
+    height: 30svh;
+    left: 10svw;
+    top: 60svh;
+    display: none;
+}
+
+#text_desc{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: #785831a8;
+}
+
 #text_plaque {
     pointer-events: none;
 
@@ -51,11 +71,22 @@ img{
     top: 40%;
     left: 5svw;
     width: 90svw;
-    height: 30svh;
+    height: 5svh;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: 微軟正黑體;
     font-size: 30px;
     color: aliceblue;
+    background-color: #785831a8;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    /* // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。 */
+    
+    #text_desc{
+        font-size: 15px;
+    }
+
 }

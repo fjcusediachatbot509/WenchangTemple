@@ -15,7 +15,7 @@
 
         <div id="imageContainer">
             <!-- <img id="outside" src="./outside.jpg"> -->
-            <!-- <img id="img_door" src="./images/door.jpg"> -->
+            <img id="img_door" src="./images/door.jpg">
             <img id="img_worshippers" src="./images/worshippers.jpg">
             <img id="img_money" src="./images/money.jpg">
             <img id="img_pen" src="./images/pen.jpg">
@@ -23,10 +23,6 @@
             <img id="img_sick" src="./images/sick.jpg">
             <img id="img_theWall" src="./images/theWall.jpg">
             <img id="img_lantern" src="./images/lantern.jpg">
-        </div>
-
-        <div id="textContrainer">
-            <p id="text_desc">測試</p>
         </div>
 
     </div>
@@ -39,20 +35,12 @@
     <a-scene id="scene"  cursor="rayOrigin: mouse">
         <a-assets>
             <!-- <a-asset-item id="messageText" src="message.html"></a-asset-item> -->
-            <img id="skyTexture" crossOrigin="anonymous" src="./WenchangTemple.jpg">
+            <img id="skyTexture" crossOrigin="anonymous" src="./outside.jpg">
             <!-- <img id="thumbJapan" crossOrigin="anonymous" src="./WenchangTemple.jpg"> -->
             <!-- <img id="thumbEgypt" crossOrigin="anonymous" src="https://cdn.aframe.io/link-traversal/thumbs/egypt.png"> -->
-            <img id="outside" crossOrigin="anonymous" src="./outside.jpg">
-            <img id="door" crossOrigin="anonymous" src="./images/door.jpg">
-            <img id="worshippers" crossOrigin="anonymous" src="./images/worshippers.jpg">
-            <img id="money" crossOrigin="anonymous" src="./images/money.jpg">
-            <img id="pen" crossOrigin="anonymous" src="./images/pen.jpg">
-            <img id="pray" crossOrigin="anonymous" src="./images/pray.jpg">
-            <img id="sick" crossOrigin="anonymous" src="./images/sick.jpg">
-            <img id="theWall" crossOrigin="anonymous" src="./images/theWall.jpg">
-            <img id="lantern" crossOrigin="anonymous" src="./images/lantern.jpg">
-            <img id="plague" crossOrigin="anonymous" src="./images/plaque.jpg">
-            <!-- <a-asset-item id="messageText" src="message.html"></a-asset-item> -->
+            <!-- <img id="outside" crossOrigin="anonymous" src="./outside.jpg"> -->
+            <img id="front" crossOrigin="anonymous" src="./images/front.jpg">
+            
         </a-assets>
 
         
@@ -63,18 +51,19 @@
 
 
         
-        
+<!--         
+        <a-image src="#door" width="3" height="2"  position="7 2 -3" rotation="0 -45 0" clickhandler="txt:door"></a-image>
         <a-image src="#sick" width="2" height="3"  position="-5.5 2 -3" rotation="0 10 0" clickhandler="txt:sick"></a-image>
         <a-image src="#money" width="2" height="3"  position="-3 3 -3" rotation="0 0 0" clickhandler="txt:money"></a-image>
         <a-image src="#worshippers" width="2" height="3"  position="-10 5 3" rotation="0 90 0" clickhandler="txt:worshippers"></a-image>
        
-        <a-image id="_plaque" src="#plague" width="3" height="2"  position="-10 8 0" rotation="0 90 0" dangerhandler="txt:plague"></a-image>
+        <a-image src="#plague" width="3" height="2"  position="-10 8 0" rotation="0 90 0" dangerhandler="txt:plague"></a-image>
+        -->
        
        
        
-       
-        <a-image src="#door" width="3" height="2"  position="7 2 -3" rotation="0 -45 0" scenechange="txt:entry.html"></a-image>
-        <a-image src="#lantern" width="2" height="3"  position="10 2 3" rotation="0 35 0" scenechange="txt:entry.html"></a-image>
+        <!-- <a-link href="index.html" position="-3.5 1.5 -1.0" image="#skyTexture"></a-link> -->
+        <a-image src="#front" width="3" height="2"  position="-1.5 3 -6" rotation="0 0 0" scenechange="txt:index.html"></a-image>
 
 
         <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
@@ -89,6 +78,6 @@
 
 
     </script>
-    <script src="./index.js"></script>
+    <script src="./entry.js"></script>
 </body>
 </html>
