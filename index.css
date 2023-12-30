@@ -64,7 +64,7 @@ img{
 }
 
 #text_plaque {
-    white-space: pre;
+    white-space: pre-line;
 
     pointer-events: none;
 
