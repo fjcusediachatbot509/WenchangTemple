@@ -51,10 +51,11 @@ AFRAME.registerComponent('clickhandler', {
             document.getElementById('text_desc').textContent = desc_texts["img_"+data.txt]
 
             if(dangerGameStart){
+                document.getElementById('textContrainer').style.display = 'none'
                 if(dangerGameCorrect){
-                    text_plaque.textContent = "你保護了A級文物 - 清 道光年間 的匾額"
+                    text_plaque.textContent = "謝謝你保護A級文物-清道光年間的匾額。但其實這是複製品，真品已被廟方安置收藏"
                 } else {
-                    text_plaque.textContent = "感謝你保護了它。但是，有更重要的文化資產就此失傳了TAT"
+                    text_plaque.textContent = "感謝你保護它。但，有更重要的文化資產失傳了TAT"
                 }
 
             }
@@ -74,7 +75,7 @@ AFRAME.registerComponent('dangerhandler', {
         el.addEventListener('click', function () {
             // let currentImg = document.getElementById(data.txt)
             // currentImg.style.display = 'block'
-            text_plaque.textContent = "恭喜你，保護了A級文物 - 清 道光年間 的匾額。但是其實，這個匾額是複製品，真品已被廟方安置收藏"
+            text_plaque.textContent = "謝謝你保護A級文物-清道光年間的匾額。但其實這是複製品，真品已被廟方安置收藏"
             dangerGameCorrect = true
         });        
     }
