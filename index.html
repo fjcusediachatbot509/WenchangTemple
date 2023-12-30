@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
     <title>文昌祠</title>
 
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <!-- <link rel="shortcut icon" href="/favicon_io/favicon-32x32.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <!-- <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script> -->
+    <script src="./lib/aframe.min.js"></script>
     <script>
         AFRAME.components["look-controls"].Component.prototype.onTouchMove = function (t) {
             var PI_2 = Math.PI/2,
@@ -51,6 +59,11 @@
 
 
     <a-scene id="scene"  cursor="rayOrigin: mouse">
+
+    <!-- 那個 components:raycaster:warn 暫時不知道怎麼解 -->
+    <!-- <a-scene id="scene" > -->
+        <!-- <a-entity cursor="rayOrigin:mouse"></a-entity> -->
+
         <a-assets>
             <!-- <a-asset-item id="messageText" src="message.html"></a-asset-item> -->
             <img id="skyTexture" crossOrigin="anonymous" src="./WenchangTemple.jpg">
@@ -76,7 +89,9 @@
             
 
         <a-entity id="rig" position="0 2 0" rotation="0 45 0">
-            <a-entity id="camera" camera look-controls></a-entity>
+            <a-entity id="camera" camera look-controls>    
+                <!-- <a-cursor></a-cursor> -->
+            </a-entity>
         </a-entity>       
         
         

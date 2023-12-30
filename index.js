@@ -125,7 +125,7 @@ window.addEventListener("load", (event) => {
 
     setTimeout(function(){
         danger_happen()
-    }, 60000)
+    }, 30000)
 
     function danger_happen(){
 
