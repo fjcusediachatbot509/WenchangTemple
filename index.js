@@ -6,11 +6,14 @@ const _plaque  = document.getElementById('_plaque')
 
 const img_worshippers  = document.getElementById('img_worshippers')
 const img_money = document.getElementById('img_money')
+const img_car = document.getElementById('img_car')
 const img_pen = document.getElementById('img_pen')
+const img_moonOldMan = document.getElementById('img_moonOldMan')
+const img_donate = document.getElementById('img_donate')
 const img_pray = document.getElementById('img_pray')
 const img_sick = document.getElementById('img_sick')
 const img_theWall = document.getElementById('img_theWall')
-const images = [ img_worshippers ,  img_money, img_pen, img_pray, img_sick, img_theWall]
+const images = [ img_worshippers ,  img_money, img_car, img_pen, img_moonOldMan, img_pray, img_sick, img_theWall]
 const text_plaque = document.getElementById('text_plaque')
 
 hideImage.addEventListener('click', e=>{
@@ -163,9 +166,12 @@ window.addEventListener("load", (event) => {
 // const desc_texts = [ img_worshippers ,  img_money, img_pen, img_pray, img_sick, img_theWall]
 const desc_texts = {
     img_worshippers: "幾乎各宮廟之神明都會參與遶境，唯獨文昌祠不會參與，此傳統與「子不語怪力亂神」有關。「文昌帝君聖誕禮斗法會」每年農曆二月初二~初四舉行，道士為文昌帝君祝壽，信眾帶供品安置於祭壇。信眾亦可報名參加禮鬥法會，報名者可領取文昌帝君的壽麵與壽桃 \n「聯考功名祈福法會」配合學測指考等全國性考試舉辦，會在考試前一天舉行，參加者需要帶蔥、芹菜、菜頭與圓形水果前來祭拜，親自讓法師進行「祭解」（返家後須將參加祭解的衣物放在枕頭下，將領到的功名米與家中的米混合後煮來吃，祭拜用的蔥、芹菜、菜頭也要吃下[還要在返家後與考試當天早上喝三口符水，剩下的符水則用來擦臉、胸、手腳，之後穿著祭解過的衣物、帶著祭解過的文具應試" ,  
-    img_money: "每年前來登記點光明燈的信眾相當踴躍，一萬多盞的光明燈常常很快被登記額滿。因應信眾對求財的渴望，更名為財神殿。 財神殿的功名燈有金碧輝煌之感，供奉著魁斗星君，每逢考季或是各種就業、升等等考試前幾天，考生可將准考證影印本放置此殿神桌上，財神殿中成堆的准考證代表著每位考生的希望，希望典試官朱筆批卷時，能讓考生金榜題名。", 
-    img_pen: "隨時都能來領2B鉛筆和黑筆，來參拜後可以自取，想要還願只要買新的筆送來即可。很適合各級學校帶學生來參拜", 
+    img_money: "可以點光明燈\n\n每年前來登記點光明燈的信眾相當踴躍，一萬多盞的光明燈常常很快被登記額滿。因應信眾對求財的渴望，更名為財神殿。 財神殿的功名燈有金碧輝煌之感，供奉著魁斗星君，每逢考季或是各種就業、升等等考試前幾天，考生可將准考證影印本放置此殿神桌上，財神殿中成堆的准考證代表著每位考生的希望，希望典試官朱筆批卷時，能讓考生金榜題名。", 
+    img_car: "可以拿到行車平安符",
+    img_moonOldMan: "可以拿到月老保祐你結良緣的的令牌",
+    img_pen: "可以拿到文昌筆\n\n隨時都能來領2B鉛筆和黑筆，來參拜後可以自取，想要還願只要買新的筆送來即可。很適合各級學校帶學生來參拜", 
+    img_donate: "似乎是建廟時，當時捐獻的鄉民能夠有一個紀念的浮雕，具有歷史文化價值，但易毀損，易被忽略，不易保存", 
     img_pray: "img_pray", 
-    img_sick: "相傳文昌帝君有七十二化身，瘟祖神是化身之一，保佑人畜興旺、五穀豐登，收瘟攝毒，驅瘟止疫，除去人間瘟疫，瘟祖神能「收瘟攝毒、掃蕩污穢」\n在2003年SARS期間，為了掃除瘟疫，於是文昌祠增建了瘟祖殿，以祈求國人身體健康、國泰民安", 
+    img_sick: "可以拿到健康平安符\n\n相傳文昌帝君有七十二化身，瘟祖神是化身之一，保佑人畜興旺、五穀豐登，收瘟攝毒，驅瘟止疫，除去人間瘟疫，瘟祖神能「收瘟攝毒、掃蕩污穢」\n在2003年SARS期間，為了掃除瘟疫，於是文昌祠增建了瘟祖殿，以祈求國人身體健康、國泰民安", 
     img_theWall: "img_theWall"
 }
